@@ -2,7 +2,7 @@
   "name": "Kijiji Auto Wholesale Price",
   "version": "1.0",
   "manifest_version": 2,
-  "description": " A Chrome extension that displays wholesale prices for Kijiji Auto listings. Copyright (c) Martha Tessema, 2023 (https://github.com/bubalina) ",
+  "description": " A Chrome extension that displays a table of Kijiji auto search results and displays the comparable wholesale prices right on the screen as you search. View the expected profit margin on any vehicle right as you source. Results can be exported into csv for excel.  Copyright (c) Martha Tessema, 2023 (https://github.com/bubalina) ",
   "icons": {
     "16": "icon16.png",
     "48": "icon48.png",
