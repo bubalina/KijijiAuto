@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Kijiji Auto Search Results</title>
+	<style>
+		body {
+			background-color: white;
+			font-family: Arial, sans-serif;
+			font-size: 14px;
+			color: #333;
+		}
+		
+		h1 {
+			font-size: 24px;
+			font-weight: bold;
+			margin: 20px 0;
+			color: #333;
+		}
+		
+		table {
+			border-collapse: collapse;
+			width: 100%;
+			margin-bottom: 20px;
+			border: 2px solid #000;
+		}
+		
+		th, td {
+			text-align: left;
+			padding: 8px;
+			border: 1px solid #ddd;
+			font-size: 14px;
+			color: #333;
+		}
+		
+		th {
+			background-color: #4C8AF5;
+			color: white;
+			font-weight: bold;
+		}
+		
+		td img {
+			max-width: 80px;
+			max-height: 60px;
+		}
+		
+		/* Color code the profit column */
+		.profit {
+			font-weight: bold;
+			font-size: 14px;
+		}
+		
+		.profit.positive {
+			color: green;
+		}
+		
+		.profit.negative {
+			color: red;
+		}
+	</style>
+</head>
+<body>
+	<h1>Kijiji Auto Search Results</h1>
+	<table id="results">
+		<thead>
+			<tr>
+				<th>Photo</th>
+				<th>Year</th>
+				<th>Make</th>
+				<th>Model</th>
+				<th>Trim</th>
+				<th>Style</th>
+				<th>Region</th>
+				<th>Kilometers</th>
+				<th>Price</th>
+				<th>Canadian Blackbook<br/>Wholesale Price</th>
+				<th>Potential Profit</th>
+				<th>Profit Margin</th>
+			</tr>
+		</thead>
+		<tbody>
+		</tbody>
+	</table>
+	<script src="popup.js"></script>
+</body>
+</html>
