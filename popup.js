@@ -101,32 +101,9 @@ function handleExportButtonClick() {
 .querySelector('#pagination').textContent = paginationMessage;
 } 
 
-// Function to handle clicks on the "Export to CSV" button
-function handleExportButtonClick() {
-  // Get the table element
-  const table = document.querySelector('#results');
-
-  // Create a new CSV file with the table data
-  let csvContent = 'data:text/csv;charset=utf-8,';
-  const rows = table.querySelectorAll('tr');
-  rows.forEach((row) => {
-    const cells = row.querySelectorAll('th, td');
-    const rowData = Array.from(cells)
-      .map((cell) => cell.textContent)
-      .join(',');
-    csvContent += rowData + '\r\n';
-  });
-
   // Set the name of the CSV file with current date and time
   const dateTime = new Date().toISOString().replace(/:/g, '-');
   const filename = `kijiji_auto_search_results_${dateTime}.csv`;
-
-  // Create a temporary link to download the CSV file
-  const encodedUri = encodeURI(csvContent);
-  const link = document.createElement('a');
-  link.setAttribute('href', encodedUri);
-  link.setAttribute('download', filename);
-  document.body.appendChild(link);
 
   // Click the link to download the CSV file
   link.click();
@@ -299,3 +276,30 @@ function renderSavedSearchResults(savedResults) {
       tableBody.appendChild(row);
   });
   }
+      // Update the pagination message
+      const paginationMessage = 'Showing 0 saved results';
+      document.querySelector('#pagination-message').textContent = paginationMessage;
+
+      // Disable the "Next Page" button
+      const nextPageButton = document.querySelector('#next-page-button');
+      nextPageButton.disabled = true;
+
+      // Disable the "Save Results" button
+      const saveResultsButton = document.querySelector('#save-results-button');
+      saveResultsButton.disabled = true;
+
+      return;
+       }
+
+      // Get the search results for the current page
+      const savedPage = savedResults[currentPageIndex];
+
+      // Loop through the saved search results and create a new row for each result
+      savedPage.forEach((result, index) => {
+      // Create a new table row element
+      const row = document.createElement('tr');
+      
+      // Create a cell for the row number
+      const rowNumberCell = document.createElement('td');
+      rowNumberCell.textContent = index
+
