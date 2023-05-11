@@ -12,7 +12,7 @@
  *
  * Limitations:
  * - The extension only works for Kijiji Auto searches in Canada
- * - The extension only displays wholesale prices for vehicles in British Columbia
+ * - The extension only displays wholesale prices for vehicles in Alberta
  * - The extension only displays prices for vehicles in the following categories:
  *   Cars & Trucks, SUVs & Crossovers, Vans, and Classic Cars
  * 
