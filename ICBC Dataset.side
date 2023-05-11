@@ -1,0 +1,548 @@
+{
+  "id": "9b426c07-5b6d-4ca7-acbc-8cd3dae592e6",
+  "version": "2.0",
+  "name": "ICBC Dataset",
+  "url": "https://icbc.canadianblackbook.com/icbc/",
+  "tests": [{
+    "id": "e6cee43b-f163-42e7-ab03-6f1f92cb8ec2",
+    "name": "Search value 2020 Ford",
+    "commands": [{
+      "id": "6a935834-eaa5-4a31-904e-523ee61cab6b",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1780x1032",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1e8a03f5-4885-475f-8237-5c3ce7dc051f",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "index=0",
+      "targets": [
+        ["index=0"]
+      ],
+      "value": ""
+    }, {
+      "id": "825ff3cf-08f8-437e-a28e-7eb17e1c8b0f",
+      "comment": "",
+      "command": "click",
+      "target": "id=region",
+      "targets": [
+        ["id=region", "id"],
+        ["css=#region", "css:finder"],
+        ["xpath=//select[@id='region']", "xpath:attributes"],
+        ["xpath=//form[@id='adjust_vehicle']/label/select", "xpath:idRelative"],
+        ["xpath=//form/label/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4dcfce10-07ab-4a8d-ac29-380b7b1292ad",
+      "comment": "",
+      "command": "open",
+      "target": "https://icbc.canadianblackbook.com/icbc/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "56151f5a-4548-4480-8bc7-d224e3326f08",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "relative=parent",
+      "targets": [
+        ["relative=parent"]
+      ],
+      "value": ""
+    }, {
+      "id": "f7509916-5ea9-4dc5-a6da-c824b3d9ca51",
+      "comment": "",
+      "command": "click",
+      "target": "id=region",
+      "targets": [
+        ["id=region", "id"],
+        ["css=#region", "css:finder"],
+        ["xpath=//select[@id='region']", "xpath:attributes"],
+        ["xpath=//form[@id='adjust_vehicle']/label/select", "xpath:idRelative"],
+        ["xpath=//form/label/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e1945d01-5638-4810-8fd0-b14feb937fea",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "css=#adjust_vehicle > label:nth-child(1)",
+      "targets": [
+        ["css=#adjust_vehicle > label:nth-child(1)", "css:finder"],
+        ["xpath=//form[@id='adjust_vehicle']/label", "xpath:idRelative"],
+        ["xpath=//form/label", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "391f0a8d-590b-4fc3-9307-4b384e9c33ae",
+      "comment": "",
+      "command": "click",
+      "target": "id=region",
+      "targets": [
+        ["id=region", "id"],
+        ["css=#region", "css:finder"],
+        ["xpath=//select[@id='region']", "xpath:attributes"],
+        ["xpath=//form[@id='adjust_vehicle']/label/select", "xpath:idRelative"],
+        ["xpath=//form/label/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fea42e6a-3aef-479d-876d-48413de83d2e",
+      "comment": "",
+      "command": "select",
+      "target": "id=region",
+      "targets": [],
+      "value": "label=Alberta"
+    }, {
+      "id": "c3fdeb66-d5c4-4397-aae5-93a6c4d32291",
+      "comment": "",
+      "command": "select",
+      "target": "id=region",
+      "targets": [
+        ["id=region", "id"],
+        ["css=#region", "css:finder"],
+        ["xpath=//select[@id='region']", "xpath:attributes"],
+        ["xpath=//form[@id='adjust_vehicle']/label/select", "xpath:idRelative"],
+        ["xpath=//form/label/select", "xpath:position"]
+      ],
+      "value": "label=Alberta"
+    }, {
+      "id": "fbd8a6f9-54e8-418d-bc97-5010374b02bf",
+      "comment": "",
+      "command": "click",
+      "target": "id=yearlist",
+      "targets": [
+        ["id=yearlist", "id"],
+        ["css=#yearlist", "css:finder"],
+        ["xpath=//select[@id='yearlist']", "xpath:attributes"],
+        ["xpath=//form[@id='select_vehicle']/div[2]/label/select", "xpath:idRelative"],
+        ["xpath=//label/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e4c1b62b-3c9f-418d-9313-69144017ae19",
+      "comment": "",
+      "command": "select",
+      "target": "id=yearlist",
+      "targets": [],
+      "value": "label=2021"
+    }, {
+      "id": "b7fa24c5-4206-4785-b97b-8d9a5bd4da45",
+      "comment": "",
+      "command": "click",
+      "target": "id=makelist",
+      "targets": [
+        ["id=makelist", "id"],
+        ["css=#makelist", "css:finder"],
+        ["xpath=//select[@id='makelist']", "xpath:attributes"],
+        ["xpath=//form[@id='select_vehicle']/div[3]/label/select", "xpath:idRelative"],
+        ["xpath=//div[3]/label/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "51996735-f8a4-4cc1-abc5-4d1c86f49938",
+      "comment": "",
+      "command": "select",
+      "target": "id=makelist",
+      "targets": [],
+      "value": "label=Ford"
+    }, {
+      "id": "a0b0d371-d47e-4dde-92b9-2821eb06de6b",
+      "comment": "",
+      "command": "click",
+      "target": "id=modellist",
+      "targets": [
+        ["id=modellist", "id"],
+        ["css=#modellist", "css:finder"],
+        ["xpath=//select[@id='modellist']", "xpath:attributes"],
+        ["xpath=//form[@id='select_vehicle']/div[4]/label/select", "xpath:idRelative"],
+        ["xpath=//div[4]/label/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9c1a0b1f-6fc7-4c3c-9312-873f33b9d75a",
+      "comment": "",
+      "command": "select",
+      "target": "id=modellist",
+      "targets": [],
+      "value": "label=F150"
+    }, {
+      "id": "10a602cd-28b9-4ef7-9a48-6f7239f924b4",
+      "comment": "",
+      "command": "click",
+      "target": "id=trimlist",
+      "targets": [
+        ["id=trimlist", "id"],
+        ["css=#trimlist", "css:finder"],
+        ["xpath=//select[@id='trimlist']", "xpath:attributes"],
+        ["xpath=//form[@id='select_vehicle']/div[5]/label/select", "xpath:idRelative"],
+        ["xpath=//div[5]/label/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d4b3cdab-7ba5-4b63-967f-02eb162a2c2c",
+      "comment": "",
+      "command": "select",
+      "target": "id=trimlist",
+      "targets": [],
+      "value": "label=XLT"
+    }, {
+      "id": "b738c6f7-63d0-45da-b00e-16ec653f5611",
+      "comment": "",
+      "command": "click",
+      "target": "id=bodystylelist",
+      "targets": [
+        ["id=bodystylelist", "id"],
+        ["css=#bodystylelist", "css:finder"],
+        ["xpath=//select[@id='bodystylelist']", "xpath:attributes"],
+        ["xpath=//form[@id='select_vehicle']/div[6]/label/select", "xpath:idRelative"],
+        ["xpath=//div[6]/label/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7976370c-f2c7-4bc2-8a1f-83d6e6c7de02",
+      "comment": "",
+      "command": "select",
+      "target": "id=bodystylelist",
+      "targets": [],
+      "value": "label=Supercab SWB 4WD"
+    }, {
+      "id": "44a648a2-4ca4-4a81-aa28-6c5271f75b6e",
+      "comment": "",
+      "command": "click",
+      "target": "id=kilometers",
+      "targets": [
+        ["id=kilometers", "id"],
+        ["css=#kilometers", "css:finder"],
+        ["xpath=//input[@id='kilometers']", "xpath:attributes"],
+        ["xpath=//form[@id='adjust_vehicle']/label[2]/input", "xpath:idRelative"],
+        ["xpath=//form/label[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "43005d55-079b-4273-8a46-0ad3b8ae27c9",
+      "comment": "",
+      "command": "type",
+      "target": "id=kilometers",
+      "targets": [
+        ["id=kilometers", "id"],
+        ["css=#kilometers", "css:finder"],
+        ["xpath=//input[@id='kilometers']", "xpath:attributes"],
+        ["xpath=//form[@id='adjust_vehicle']/label[2]/input", "xpath:idRelative"],
+        ["xpath=//form/label[2]/input", "xpath:position"]
+      ],
+      "value": "40000"
+    }, {
+      "id": "4af5d330-28bf-48de-a6b9-2eb5b88bb53d",
+      "comment": "",
+      "command": "click",
+      "target": "css=a > img",
+      "targets": [
+        ["css=a > img", "css:finder"],
+        ["xpath=//form[@id='adjust_vehicle']/a/img", "xpath:idRelative"],
+        ["xpath=//a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ec215a86-0ed8-4e8c-ad3d-84ec4a60bd6f",
+      "comment": "",
+      "command": "click",
+      "target": "css=label:nth-child(2)",
+      "targets": [
+        ["css=label:nth-child(2)", "css:finder"],
+        ["xpath=//form[@id='adjust_vehicle']/label[2]", "xpath:idRelative"],
+        ["xpath=//form/label[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7b4d0e6f-7c00-469f-9871-09a9587149a4",
+      "comment": "",
+      "command": "type",
+      "target": "id=kilometers",
+      "targets": [
+        ["id=kilometers", "id"],
+        ["css=#kilometers", "css:finder"],
+        ["xpath=//input[@id='kilometers']", "xpath:attributes"],
+        ["xpath=//form[@id='adjust_vehicle']/label[2]/input", "xpath:idRelative"],
+        ["xpath=//form/label[2]/input", "xpath:position"]
+      ],
+      "value": "30000"
+    }, {
+      "id": "6554b8a1-c90b-4e69-85b7-b9bd650b05fc",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=kilometers",
+      "targets": [
+        ["id=kilometers", "id"],
+        ["css=#kilometers", "css:finder"],
+        ["xpath=//input[@id='kilometers']", "xpath:attributes"],
+        ["xpath=//form[@id='adjust_vehicle']/label[2]/input", "xpath:idRelative"],
+        ["xpath=//form/label[2]/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }]
+  }, {
+    "id": "576e2e8e-7968-422c-8654-d44e73ed2fb9",
+    "name": "2021",
+    "commands": [{
+      "id": "1fab4c12-023b-4923-979c-d7655a2b46cd",
+      "comment": "",
+      "command": "open",
+      "target": "https://icbc.canadianblackbook.com/icbc/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2b055841-f328-49b9-86bd-534b603c2c2c",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1780x1032",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "21aa0711-0f4c-4652-88d5-60cfdd2d9924",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "index=0",
+      "targets": [
+        ["index=0"]
+      ],
+      "value": ""
+    }, {
+      "id": "b50f0d28-d2b3-4f2e-8845-a56948aa3401",
+      "comment": "",
+      "command": "click",
+      "target": "id=yearlist",
+      "targets": [
+        ["id=yearlist", "id"],
+        ["css=#yearlist", "css:finder"],
+        ["xpath=//select[@id='yearlist']", "xpath:attributes"],
+        ["xpath=//form[@id='select_vehicle']/div[2]/label/select", "xpath:idRelative"],
+        ["xpath=//label/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c8920be5-932b-4513-b255-191857f6a519",
+      "comment": "",
+      "command": "select",
+      "target": "id=yearlist",
+      "targets": [],
+      "value": "label=2021"
+    }, {
+      "id": "ae215fa4-205a-45b6-8257-b266b0fc904f",
+      "comment": "",
+      "command": "click",
+      "target": "id=makelist",
+      "targets": [
+        ["id=makelist", "id"],
+        ["css=#makelist", "css:finder"],
+        ["xpath=//select[@id='makelist']", "xpath:attributes"],
+        ["xpath=//form[@id='select_vehicle']/div[3]/label/select", "xpath:idRelative"],
+        ["xpath=//div[3]/label/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6208bb0f-0614-43d9-9f4a-4248a0f163f3",
+      "comment": "",
+      "command": "select",
+      "target": "id=makelist",
+      "targets": [],
+      "value": "label=Ford"
+    }, {
+      "id": "a1dbc28b-aaac-4b15-be93-0238ed1ca781",
+      "comment": "",
+      "command": "click",
+      "target": "id=modellist",
+      "targets": [
+        ["id=modellist", "id"],
+        ["css=#modellist", "css:finder"],
+        ["xpath=//select[@id='modellist']", "xpath:attributes"],
+        ["xpath=//form[@id='select_vehicle']/div[4]/label/select", "xpath:idRelative"],
+        ["xpath=//div[4]/label/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bb55ed54-19c1-4b12-8283-20af5079165b",
+      "comment": "",
+      "command": "select",
+      "target": "id=modellist",
+      "targets": [],
+      "value": "label=F150"
+    }, {
+      "id": "5a40f6bb-dc99-4411-ab6e-eecf84e10440",
+      "comment": "",
+      "command": "click",
+      "target": "id=trimlist",
+      "targets": [
+        ["id=trimlist", "id"],
+        ["css=#trimlist", "css:finder"],
+        ["xpath=//select[@id='trimlist']", "xpath:attributes"],
+        ["xpath=//form[@id='select_vehicle']/div[5]/label/select", "xpath:idRelative"],
+        ["xpath=//div[5]/label/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a8dd1dea-3590-4dfa-9d0a-227ff4acefe0",
+      "comment": "",
+      "command": "select",
+      "target": "id=trimlist",
+      "targets": [],
+      "value": "label=XL"
+    }, {
+      "id": "89754572-aa04-4405-89a5-642ee4863f2f",
+      "comment": "",
+      "command": "click",
+      "target": "id=bodystylelist",
+      "targets": [
+        ["id=bodystylelist", "id"],
+        ["css=#bodystylelist", "css:finder"],
+        ["xpath=//select[@id='bodystylelist']", "xpath:attributes"],
+        ["xpath=//form[@id='select_vehicle']/div[6]/label/select", "xpath:idRelative"],
+        ["xpath=//div[6]/label/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "189ee3b2-befe-4b4e-bb66-b9b71db57250",
+      "comment": "",
+      "command": "select",
+      "target": "id=bodystylelist",
+      "targets": [],
+      "value": "label=Supercab SWB 4WD"
+    }, {
+      "id": "6dbf6828-a7e9-49be-8a8e-41b61ee19a0e",
+      "comment": "",
+      "command": "click",
+      "target": "id=region",
+      "targets": [
+        ["id=region", "id"],
+        ["css=#region", "css:finder"],
+        ["xpath=//select[@id='region']", "xpath:attributes"],
+        ["xpath=//form[@id='adjust_vehicle']/label/select", "xpath:idRelative"],
+        ["xpath=//form/label/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0c29a5dd-9411-4f10-a53c-27c21be9ef94",
+      "comment": "",
+      "command": "select",
+      "target": "id=region",
+      "targets": [],
+      "value": "label=Alberta"
+    }, {
+      "id": "8d194ecb-60c5-406c-a312-7678a65de47b",
+      "comment": "",
+      "command": "click",
+      "target": "id=kilometers",
+      "targets": [
+        ["id=kilometers", "id"],
+        ["css=#kilometers", "css:finder"],
+        ["xpath=//input[@id='kilometers']", "xpath:attributes"],
+        ["xpath=//form[@id='adjust_vehicle']/label[2]/input", "xpath:idRelative"],
+        ["xpath=//form/label[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "50335e06-6287-4a7c-9ff2-f8dbf76c8ad6",
+      "comment": "",
+      "command": "type",
+      "target": "id=kilometers",
+      "targets": [
+        ["id=kilometers", "id"],
+        ["css=#kilometers", "css:finder"],
+        ["xpath=//input[@id='kilometers']", "xpath:attributes"],
+        ["xpath=//form[@id='adjust_vehicle']/label[2]/input", "xpath:idRelative"],
+        ["xpath=//form/label[2]/input", "xpath:position"]
+      ],
+      "value": "30000"
+    }, {
+      "id": "6d99761b-9d1d-4b1a-8e98-44969629cd95",
+      "comment": "",
+      "command": "click",
+      "target": "css=a > img",
+      "targets": [
+        ["css=a > img", "css:finder"],
+        ["xpath=//form[@id='adjust_vehicle']/a/img", "xpath:idRelative"],
+        ["xpath=//a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3a5881b1-7d99-4410-a11b-b815920a36d5",
+      "comment": "",
+      "command": "click",
+      "target": "id=kilometers",
+      "targets": [
+        ["id=kilometers", "id"],
+        ["css=#kilometers", "css:finder"],
+        ["xpath=//input[@id='kilometers']", "xpath:attributes"],
+        ["xpath=//form[@id='adjust_vehicle']/label[2]/input", "xpath:idRelative"],
+        ["xpath=//form/label[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "102fd78d-7200-4645-98bc-6c6f395d331b",
+      "comment": "",
+      "command": "type",
+      "target": "id=kilometers",
+      "targets": [
+        ["id=kilometers", "id"],
+        ["css=#kilometers", "css:finder"],
+        ["xpath=//input[@id='kilometers']", "xpath:attributes"],
+        ["xpath=//form[@id='adjust_vehicle']/label[2]/input", "xpath:idRelative"],
+        ["xpath=//form/label[2]/input", "xpath:position"]
+      ],
+      "value": "20000"
+    }, {
+      "id": "02359121-ad82-495d-8de6-8b4835a7fb2a",
+      "comment": "",
+      "command": "click",
+      "target": "css=a > img",
+      "targets": [
+        ["css=a > img", "css:finder"],
+        ["xpath=//form[@id='adjust_vehicle']/a/img", "xpath:idRelative"],
+        ["xpath=//a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "562684f1-391d-437b-bd2c-31fc9153af8b",
+      "comment": "",
+      "command": "click",
+      "target": "css=#wholesalePriceTable > tbody",
+      "targets": [
+        ["css=#wholesalePriceTable > tbody", "css:finder"],
+        ["xpath=//table[@id='wholesalePriceTable']/tbody", "xpath:idRelative"],
+        ["xpath=//tbody", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5b0a7b48-1861-43c7-9890-59121474d759",
+      "comment": "",
+      "command": "click",
+      "target": "css=.hover > img",
+      "targets": [
+        ["css=.hover > img", "css:finder"],
+        ["xpath=//img[contains(@src,'https://icbc.canadianblackbook.com/icbc/printbutton.jpg')]", "xpath:img"],
+        ["xpath=//div[@id='toolbarwrapper']/div/div/span[5]/a/span/img", "xpath:idRelative"],
+        ["xpath=//a/span/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "61f0eab6-958f-4db5-b388-622152ca790b",
+      "comment": "${result}",
+      "command": "storeAttribute",
+      "target": "//*[@id=\"wcln_total\"]",
+      "targets": [],
+      "value": "text"
+    }]
+  }],
+  "suites": [{
+    "id": "183fde63-25ce-4741-abb6-3582eb847b67",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["e6cee43b-f163-42e7-ab03-6f1f92cb8ec2"]
+  }],
+  "urls": ["https://icbc.canadianblackbook.com/icbc/"],
+  "plugins": []
+}
