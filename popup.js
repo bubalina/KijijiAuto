@@ -154,6 +154,14 @@ function handleSaveResultsClick() {
   }));
   savedResults.push(savedPage);
 
+  // Display a confirmation message
+  alert('Results saved!');
+
+  // Reset the current page index to 0
+  currentPage = 0;
+}
+
+
   // Enable the "Next Page" button and reset the current page index
   const nextPageButton = document.querySelector('#next-page-button');
   nextPageButton.removeAttribute('disabled');
