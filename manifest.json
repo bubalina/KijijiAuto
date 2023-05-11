@@ -2,7 +2,7 @@
   "name": "Kijiji Auto Wholesale Price",
   "version": "1.0",
   "manifest_version": 2,
-  "description": "A Chrome extension that displays wholesale prices for Kijiji Auto listings.",
+  "description": " Copyright (c) Martha Tessema, 2023 (https://github.com/bubalina) A Chrome extension that displays wholesale prices for Kijiji Auto listings.",
   "icons": {
     "16": "icon16.png",
     "48": "icon48.png",
