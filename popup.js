@@ -311,3 +311,69 @@ function renderSavedSearchResults(savedResults) {
       const rowNumberCell = document.createElement('td');
       rowNumberCell.textContent = index
 
+function handleViewSavedResultsClick() {
+  // Create a new window for the saved results
+  const savedResultsWindow = window.open('', 'Saved Results');
+
+  // Generate HTML for the saved results table
+  const savedResultsTable = document.createElement('table');
+  const savedResultsHeaderRow = document.createElement('tr');
+  const savedResultsHeaderCells = [
+    'Photo',
+    'Year',
+    'Make',
+    'Model',
+    'Trim',
+    'Style',
+    'Region',
+    'Kilometers',
+    'Price',
+    'Wholesale Price',
+    'Profit Amount',
+    'Profit Margin',
+  ].map((headerText) => {
+    const headerCell = document.createElement('th');
+    headerCell.textContent = headerText;
+    return headerCell;
+  });
+  savedResultsHeaderCells.forEach((headerCell) =>
+    savedResultsHeaderRow.appendChild(headerCell)
+  );
+  savedResultsTable.appendChild(savedResultsHeaderRow);
+
+  // Add rows for each saved page of results
+  savedResults.forEach((savedPage) => {
+    const savedPageRows = savedPage.map((savedResult) => {
+      const row = document.createElement('tr');
+      const photoCell = document.createElement('td');
+      const photo = document.createElement('img');
+      photo.src = savedResult.photoUrl;
+      photoCell.appendChild(photo);
+      row.appendChild(photoCell);
+      const dataCells = [
+        'year',
+        'make',
+        'model',
+        'trim',
+        'style',
+        'region',
+        'kilometers',
+        'price',
+        'wholesalePrice',
+        'profitAmount',
+        'profitMargin',
+      ].map((propName) => {
+        const dataCell = document.createElement('td');
+        dataCell.textContent = savedResult[propName];
+        return dataCell;
+      });
+      dataCells.forEach((dataCell) => row.appendChild(dataCell));
+      return row;
+    });
+    savedPageRows.forEach((row) => savedResultsTable.appendChild(row));
+  });
+
+  // Add the saved results table to the popup window
+  savedResultsWindow.document.body.appendChild(savedResultsTable);
+}
+
