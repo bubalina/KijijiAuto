@@ -1,0 +1,25 @@
+{
+  "name": "Kijiji Auto Wholesale Price",
+  "version": "1.0",
+  "manifest_version": 2,
+  "description": "A Chrome extension that displays wholesale prices for Kijiji Auto listings.",
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.kijiji.ca/*",
+        "https://www.kijijiautos.ca/*"
+      ],
+      "js": ["content.js"],
+      "run_at": "document_end"
+    }
+  ],
+  "permissions": [
+    "activeTab",
+    "storage"
+  ]
+}
