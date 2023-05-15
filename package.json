@@ -11,6 +11,6 @@
     "@shaggytools/nhtsa-api-wrapper": "*"
   },
   "scripts": {
-    "install": "npm install @shaggytools/nhtsa-api-wrapper"
+    "install": "npm install --yes @shaggytools/nhtsa-api-wrapper"
   }
 }
