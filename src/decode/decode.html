@@ -1,15 +1,105 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>VIN Decoder</title>
-  </head>
-  <body>
-    <h1>VIN Decoder</h1>
-    <form action="decode.php" method="post">
-      <label for="vin">Enter VIN:</label>
-      <input type="text" id="vin" name="vin" required>
-      <br><br>
-      <button type="submit">Decode</button>
-    </form>
-  </body>
+<head>
+  <title>VIN Decoder</title>
+  <style>
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    th, td {
+      padding: 8px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+    }
+
+    th {
+      background-color: #f2f2f2;
+    }
+  </style>
+  <script src="https://cdn.jsdelivr.net/npm/@shaggytools/nhtsa-api-wrapper/dist/nhtsa-api-wrapper.iife.min.js"></script>
+  <script>
+    // Function to handle form submission and VIN decoding
+    async function decodeVin(event) {
+      event.preventDefault(); // Prevent form submission
+
+      const vinInput = document.getElementById('vin');
+      const vin = vinInput.value;
+
+      try {
+        const { Results } = await NHTSA.DecodeVinValues(vin);
+
+        if (Results.length > 0) {
+          const decodedVehicle = Results[0];
+          const {
+            Manufacturer,
+            VehicleType,
+            ModelYear,
+            Make,
+            Model,
+            Trim,
+            Series,
+            EngineHP,
+            BodyClass,
+            DriveType,
+            FuelTypePrimary,
+            DisplacementL
+          } = decodedVehicle;
+
+          // Display decoded data in a table
+          const resultsContainer = document.getElementById('results');
+          resultsContainer.innerHTML = `
+            <h2>Results</h2>
+            <table>
+              <tr>
+                <th>Manufacturer</th>
+                <th>Vehicle Type</th>
+                <th>Model Year</th>
+                <th>Make</th>
+                <th>Model</th>
+                <th>Trim</th>
+                <th>Series</th>
+                <th>Engine HP</th>
+                <th>Body Class</th>
+                <th>Drive Type</th>
+                <th>Fuel Type Primary</th>
+                <th>Displacement (L)</th>
+              </tr>
+              <tr>
+                <td>${Manufacturer}</td>
+                <td>${VehicleType}</td>
+                <td>${ModelYear}</td>
+                <td>${Make}</td>
+                <td>${Model}</td>
+                <td>${Trim}</td>
+                <td>${Series}</td>
+                <td>${EngineHP}</td>
+                <td>${BodyClass}</td>
+                <td>${DriveType}</td>
+                <td>${FuelTypePrimary}</td>
+                <td>${DisplacementL}</td>
+              </tr>
+            </table>
+          `;
+        } else {
+          const resultsContainer = document.getElementById('results');
+          resultsContainer.innerHTML = '<p>No results found for the provided VIN.</p>';
+        }
+      } catch (error) {
+        console.error('Error decoding VIN:', error);
+      }
+    }
+  </script>
+</head>
+<body>
+  <h1>VIN Decoder</h1>
+  <form onsubmit="decodeVin(event)">
+    <label for="vin">Enter VIN:</label>
+    <input type="text" id="vin" name="vin" required>
+    <br><br>
+    <button type="submit">Decode</button>
+  </form>
+  <div id="results"></div>
+</body>
 </html>
