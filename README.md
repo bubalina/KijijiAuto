@@ -1,4 +1,4 @@
-# Kijiji Auto Wholesale Price Comparison Extension
+# Kijiji Auto Wholesale Price App Extension
 
 This Chrome extension displays a table of Kijiji auto search results and compares price to wholesale prices by Canadian Black Book.
 
