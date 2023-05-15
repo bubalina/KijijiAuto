@@ -1,0 +1,11 @@
+{
+  "name": "kijiji-auto-wholesale-price",
+  "version": "1.0.0",
+  "description": "Kijiji Auto Wholesale Price Extension - VIN Decoder Tool",
+  "dependencies": {
+    "@shaggytools/nhtsa-api-wrapper": "*"
+  },
+  "scripts": {
+    "install": "npm install @shaggytools/nhtsa-api-wrapper"
+  }
+}
