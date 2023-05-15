@@ -16,7 +16,7 @@ The table is updated whenever the user navigates to a new search results page on
 ## Limitations:
 
 - The extension only works for Kijiji Auto searches in Canada
-- The extension only displays wholesale prices for vehicles in British Columbia
+- The extension only displays wholesale prices for vehicles in the province selected
 - The extension only displays prices for vehicles in the following categories: Cars & Trucks, SUVs & Crossovers, Vans, and Classic Cars
 
 ## Author:
