@@ -2,6 +2,11 @@
   "name": "kijiji-auto-wholesale-price",
   "version": "1.0.0",
   "description": "Kijiji Auto Wholesale Price Extension - VIN Decoder Tool",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bubalina/KijijiAuto.git"
+  },
+  "license": "MIT",
   "dependencies": {
     "@shaggytools/nhtsa-api-wrapper": "*"
   },
